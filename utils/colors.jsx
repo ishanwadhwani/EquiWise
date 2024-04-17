@@ -1,0 +1,9 @@
+export default {
+    PRIMARY: '#4F3466',
+    SECONDARY: '#9F6B99',
+    PRIMARYPURPLE1: '#47305D',
+    PRIMARYPURPLE2: '#5B4071',
+    PRIMARYPURPLE3: '#735989',
+    WHITE: '#FFFFFF',
+    BLACK: '#000000',
+}
