@@ -7,11 +7,11 @@ export default function LoginScreen() {
   return (
     <View>
       <Image source={loginbg} style={styles.bgImage} />
-      <Text style={styles.heading}>Welcome to EquiWise</Text>
-      <Text style={styles.subheading}>
-        Because math is more fun when it's dividing expenses.
-      </Text>
       <View style={styles.container}>
+        <Text style={styles.heading}>Welcome to EquiWise</Text>
+        <Text style={styles.subheading}>
+          Because math is more fun when it's dividing expenses.
+        </Text>
         <TouchableOpacity
           style={styles.subcontainer}
           onPress={() => console.log("btn")}
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     display: "flex",
     alignItems: "center",
-    top: 100,
-    left: 50,
+    // top: 100,
+    // left: 0,
     color: colors.WHITE,
     fontSize: 34,
     textAlign: "center",
@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     display: "flex",
     alignItems: "center",
-    top: 100,
-    left: 25,
+    // top: 100,
+    // left: 25,
     color: colors.WHITE,
     fontSize: 16,
     textAlign: "center",
@@ -56,18 +56,21 @@ const styles = StyleSheet.create({
   container: {
     position: "absolute",
     top: 250,
-    left: 50,
-    right: 50,
+    // left: 50,
+    // right: 50,
     bottom: 200,
-    backgroundColor: colors.SECONDARY,
+    width: "100%",
+    // backgroundColor: colors.SECONDARY,
     zIndex: 999,
     borderRadius: 30,
     display: "flex",
     alignItems: "center",
   },
   subcontainer: {
+    position: "absolute",
     display: "flex",
     alignItems: "center",
+    top: 300,
     width: "80%",
     height: 70,
     backgroundColor: colors.WHITE,
@@ -75,7 +78,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 30,
     marginBottom: 30,
+    borderStyle: "solid",
+    borderWidth: 2,
     borderRadius: 99,
+    borderColor: colors.PRIMARYPURPLE2,
   },
   text: {
     color: colors.PRIMARYPURPLE2,
